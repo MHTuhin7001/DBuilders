@@ -17,11 +17,13 @@
 	header .navbar-brand img {
 		width: 180px;
 	}
-	.package .package-content .btn img {
-		width: 32px;
-	}
-	.package .package-content .btn {
+	.package .package-content .btn,
+	.services .services-content .btn {
 		font-size: 1.15rem;
+	}
+	.package .package-content .btn img,
+	.services .services-content .btn img {
+		width: 32px;
 	}
 }
 
@@ -86,6 +88,9 @@
 	header .navbar .login-btn {
 		display: inherit;
 	}
+	.portfolio .portfolio-content-wrapper {
+		height: 744px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -94,6 +99,10 @@
 	}
 	header .container {
 		padding: 0 35px 0;
+	}
+	.portfolio .portfolio-content-wrapper {
+		overflow: inherit;
+		height: inherit;
 	}
 }
 
@@ -114,6 +123,12 @@
 	.package .package-content .swiper-slide {
 		height: 350px;
 	}
+	.services .services-title h1 {
+		margin: 0 0 50px;
+	}
+	.portfolio .portfolio-buttons {
+		margin: 0 0 35px;
+	}
 }
 
 @media (max-width: 375px) {
@@ -125,5 +140,8 @@
 	}
 	.package .package-content .swiper-slide {
 		height: 300px;
+	}
+	.portfolio .portfolio-content img {
+		height: 220px;
 	}
 }
