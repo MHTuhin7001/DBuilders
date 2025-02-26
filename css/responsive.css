@@ -1,0 +1,129 @@
+@media (min-width: 992px) {
+	.dropdown:hover > .dropdown-menu {
+		display: block;
+	}
+	.dropdown > .dropdown-toggle:active {
+		pointer-events: none;
+	}
+}
+
+@media (max-width: 1440px) {
+	.container {
+		padding: 65px 100px;
+	}
+	header .container {
+		padding: 0 70px 0;
+	}
+	header .navbar-brand img {
+		width: 180px;
+	}
+	.package .package-content .btn img {
+		width: 32px;
+	}
+	.package .package-content .btn {
+		font-size: 1.15rem;
+	}
+}
+
+@media (max-width: 991px) {
+	.container {
+		padding: 50px 80px;
+	}
+	header .container {
+		padding: 0 50px 0;
+	}
+	header .container {
+		justify-content: inherit;
+	}
+	header .navbar .navbar-brand {
+		margin-right: auto;
+	}
+	header .navbar-brand img {
+		width: 150px;
+	}
+	header .offcanvas-header h5 {
+		font-weight: 600;
+		color: var(--text);
+	}
+	header .offcanvas-header i {
+		font-size: 1.4rem;
+	}
+	header .navbar-nav {
+		gap: 0;
+	}
+	header .navbar-nav .nav-item .nav-link,
+	header .navbar-nav .nav-item.dropdown i {
+		color: var(--textBlack);
+	}
+	header .navbar-nav .nav-item .nav-link {
+		padding: 8px 10px;
+		border-radius: 5px;
+	}
+	header .navbar-nav .nav-item .nav-link:hover,
+	header .navbar-nav .nav-item.dropdown .nav-link:hover ~ i {
+		color: var(--textWhite);
+		background: var(--text);
+	}
+	header .navbar-nav .nav-item:last-child {
+		display: none;
+	}
+	header .navbar-nav .nav-item.dropdown {
+		margin-right: 0;
+	}
+	header .navbar-nav .nav-item.dropdown i {
+		font-size: 1.29rem;
+		color: var(--textWhite);
+		background: var(--text);
+		padding: 8px;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+	header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+		padding: 8px 20px;
+	}
+	header .navbar .login-btn {
+		display: inherit;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		padding: 40px 60px;
+	}
+	header .container {
+		padding: 0 35px 0;
+	}
+}
+
+@media (max-width: 575px) {
+	.container {
+		padding: 40px;
+	}
+	header .container {
+		padding: 0 25px 0;
+	}
+	header .navbar .navbar-toggler i {
+		font-size: 1.25rem;
+		color: var(--textWhite);
+	}
+	header .navbar-brand img {
+		width: 130px;
+	}
+	.package .package-content .swiper-slide {
+		height: 350px;
+	}
+}
+
+@media (max-width: 375px) {
+	.container {
+		padding: 30px 20px;
+	}
+	header .container {
+		padding: 0 15px 0;
+	}
+	.package .package-content .swiper-slide {
+		height: 300px;
+	}
+}

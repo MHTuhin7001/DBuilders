@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+	/** Fonts **/
+	--heading: "Poppins", serif;
+	--body: "Montserrat", serif;
+	/** Colors **/
+	--text: #21d271;
+	--textBlack: #000;
+	--textWhite: #fff;
+}
+h1,
+h2,
+h3 {
+	font-family: var(--heading);
+}
+h4,
+h5,
+h6 {
+	font-family: var(--body);
+}
+body {
+	font-family: var(--body);
+	font-size: 15px;
+}
+.container {
+	max-width: 1600px;
+	padding: 80px 150px;
+}
+.mht-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/** Header **/
+header {
+	background: #080576;
+}
+header .container {
+	padding: 0 120px 0;
+}
+header .navbar-brand img {
+	width: 200px;
+}
+header .navbar-nav {
+	gap: 10px;
+}
+header .navbar .navbar-toggler:focus {
+	box-shadow: none;
+}
+header .navbar .navbar-toggler i {
+	font-size: 1.4rem;
+	color: var(--textWhite);
+}
+header .navbar-nav .nav-item .nav-link,
+header .navbar-nav .nav-item.dropdown i,
+header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--textWhite);
+	padding: 4px 8px;
+	transition: 0.3s all;
+}
+header .navbar-nav .nav-item .nav-link:hover,
+header .navbar-nav .nav-item.dropdown .nav-link:hover ~ i {
+	color: var(--text);
+}
+header .navbar-nav .nav-item:last-child .nav-link {
+	border: 2px solid var(--textWhite);
+}
+header .navbar-nav .nav-item:last-child .nav-link:hover {
+	border: 2px solid var(--text);
+}
+header .navbar-nav .nav-item.dropdown {
+	margin-right: 10px;
+}
+header .navbar-nav .nav-item.dropdown i {
+	position: absolute;
+	top: 3px;
+	right: -15px;
+}
+header .navbar-nav .nav-item.dropdown .dropdown-menu {
+	padding: 0;
+	border: 0;
+	border-radius: 5px;
+}
+header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+	color: var(--textBlack);
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+header .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+	color: var(--textWhite);
+	background: var(--text);
+}
+header .navbar .login-btn {
+	display: none;
+	color: var(--textWhite);
+}
+
+/* Package */
+.package .col-lg-4 {
+	margin-bottom: 24px;
+}
+.package .package-content {
+	height: 100%;
+	padding-bottom: 25px;
+	border-radius: 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.package .package-content h4 {
+	font-weight: 700;
+	color: var(--text);
+	margin: 30px 0 20px;
+}
+.package .package-content .btn {
+	width: 85%;
+	font-family: var(--heading);
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: var(--textWhite);
+	background: #007aff;
+	border-radius: 50px;
+}
+.package .package-content .btn img {
+	width: 40px;
+	aspect-ratio: 1/1;
+	margin-right: 10px;
+}
+.package .package-content .swiper-slide {
+	height: 450px;
+}
+.package .package-content .swiper-slide img {
+	border-radius: 15px;
+}
