@@ -20,6 +20,7 @@
 		<!-- Responsive Style -->
 		<link rel="stylesheet" href="css/responsive.css" />
 	</head>
+
 	<body>
 		<!-- Header -->
 		<header>
@@ -510,6 +511,144 @@
 			</div>
 		</section>
 
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row footer-wrapper">
+					<div class="col-xl-3">
+						<div class="footer-brand">
+							<a href=""
+								><img
+									src="images/logo.png"
+									class="img-fluid"
+									alt="Brand Logo"
+							/></a>
+							<p>
+								We are a team of professionals who are dedicated
+								to providing the best services to our clients.
+								We are committed to transforming homes with
+								elegance and style.
+							</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6">
+						<div class="footer-menu">
+							<h5>Quick Links</h5>
+							<ul>
+								<li>
+									<a href="index.html"
+										><i
+											class="fa-solid fa-chevron-right"
+										></i
+										>Home</a
+									>
+								</li>
+								<li>
+									<a href="About.html"
+										><i
+											class="fa-solid fa-chevron-right"
+										></i
+										>About Us</a
+									>
+								</li>
+								<li>
+									<a href="contact.html"
+										><i
+											class="fa-solid fa-chevron-right"
+										></i
+										>Contact Us</a
+									>
+								</li>
+								<li>
+									<a href="terms.html"
+										><i
+											class="fa-solid fa-chevron-right"
+										></i
+										>Terms of Service</a
+									>
+								</li>
+								<li>
+									<a href="privacy-policy.html"
+										><i
+											class="fa-solid fa-chevron-right"
+										></i
+										>Privacy Policy</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6">
+						<div class="footer-contact">
+							<h5>Contact Us</h5>
+							<div
+								class="d-flex align-items-center mb-1 footer-contact-address"
+							>
+								<h6>Phone:</h6>
+								<p>+1234567890</p>
+							</div>
+							<div
+								class="d-flex align-items-center mb-2 footer-contact-address"
+							>
+								<h6>Email:</h6>
+								<p>example@gmail.com</p>
+							</div>
+							<div class="footer-contact-social">
+								<h6>Follow Us:</h6>
+								<div class="mt-2 footer-social-icons">
+									<a href="#"
+										><i class="fa-brands fa-youtube"></i
+									></a>
+									<a href="#"
+										><i class="fa-brands fa-facebook-f"></i
+									></a>
+									<a href="#"
+										><i class="fa-brands fa-instagram"></i
+									></a>
+									<a href="#"
+										><i class="fa-brands fa-linkedin-in"></i
+									></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4">
+						<div class="footer-newsletter">
+							<h5>Newsletter</h5>
+							<form action="">
+								<input
+									type="email"
+									class="form-control"
+									placeholder="Enter your email"
+									required
+								/>
+								<button type="submit" class="btn">
+									Subscribe
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Copy Right -->
+		<section class="copy-right">
+			<div class="container">
+				<div
+					class="d-flex justify-content-between align-items-center copy-right-wrapper"
+				>
+					<p>&#169; All rights reserved.</p>
+					<p>
+						Design & Develop by
+						<a href="https://atomsoft.com.bd/" target="_blank"
+							>AtomSoft</a
+						>
+					</p>
+				</div>
+			</div>
+		</section>
+
 		<!-- JQuery Script -->
 		<script src="js/jquery-3.7.1.min.js"></script>
 		<!-- Waypoint Script -->
@@ -530,6 +669,7 @@
 				loop: true,
 				autoplay: {
 					delay: 2500,
+					pauseOnMouseEnter: true,
 					disableOnInteraction: false,
 				},
 			});
@@ -548,9 +688,10 @@
 			});
 			// Function to filter and show a limited number of cards
 			const filterCards = (e) => {
-				document
-					.querySelector(".portfolio-buttons .active")
-					?.classList.remove("active");
+				const activeBtn = document.querySelector(
+					".portfolio-buttons .active"
+				);
+				if (activeBtn) activeBtn.classList.remove("active");
 				e.target.classList.add("active");
 				const filterName = e.target.dataset.filter;
 				showLimitedItems(filterName);
