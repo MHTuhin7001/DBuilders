@@ -521,6 +521,9 @@ footer .col-xl-3 {
 	opacity: 0.8;
 	padding: 18px 8px;
 }
+.portfolio-page .portfolio-content-wrapper {
+	height: inherit !important;
+}
 
 /* Review */
 .review .review-us {
