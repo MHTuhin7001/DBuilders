@@ -476,6 +476,113 @@
 			</div>
 		</section>
 
+		<!--Review -->
+		<section class="review">
+			<div class="container">
+				<div class="section-title text-center">
+					<h1>Reviews</h1>
+				</div>
+				<div class="review-wrapper">
+					<div class="row review-us">
+						<div class="col-sm-6">
+							<div class="reviewed-rating">
+								<h5>Clients Reviews</h5>
+								<div
+									class="d-flex align-items-center rating-stars"
+								>
+									<p>4.5</p>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star-half-stroke"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="review-on text-sm-end">
+								<h5>Review Us on Google</h5>
+								<a href="" class="btn">Review Us</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper mt-4 clients-reviews">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="client-review-content">
+									<h5>MHTuhin</h5>
+									<div class="rating-stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Architecto sint,
+										perferendis quisquam doloribus neque
+										expedita, corporis aliquid tenetur
+										magnam ipsam iusto reiciendis provident
+										enim animi!
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="client-review-content">
+									<h5>MHTuhin</h5>
+									<div class="rating-stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Architecto sint,
+										perferendis quisquam doloribus neque
+										expedita, corporis aliquid tenetur
+										magnam ipsam iusto reiciendis provident
+										enim animi! perferendis quisquam
+										doloribus neque expedita, corporis
+										aliquid tenetur magnam ipsam iusto
+										reiciendis provident enim animi!
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="client-review-content">
+									<h5>MHTuhin</h5>
+									<div class="rating-stars">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Architecto sint,
+										perferendis quisquam doloribus neque
+										expedita, corporis aliquid tenetur
+										magnam ipsam iusto reiciendis provident
+										enim animi!
+									</p>
+								</div>
+							</div>
+						</div>
+						<i
+							class="fa-solid fa-arrow-left review-btn review-prev"
+						></i>
+						<i
+							class="fa-solid fa-arrow-right review-btn review-next"
+						></i>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- Facts -->
 		<section class="facts">
 			<div class="container">
@@ -662,8 +769,8 @@
 		<!-- Main Script -->
 		<script src="js/script.js"></script>
 
-		<!-- Initialize Swiper -->
 		<script>
+			// Initialize Package Slider
 			var swiper = new Swiper(".package-slider", {
 				grabCursor: true,
 				loop: true,
@@ -728,6 +835,28 @@
 			prtflBtn.forEach((button) =>
 				button.addEventListener("click", filterCards)
 			);
+
+			// Initialize Client Reviews Slider
+			var swiper = new Swiper(".clients-reviews", {
+				spaceBetween: 20,
+				navigation: {
+					nextEl: ".review-next",
+					prevEl: ".review-prev",
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 1,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 10,
+					},
+					1200: {
+						slidesPerView: 2,
+						spaceBetween: 20,
+					},
+				},
+			});
 
 			// Initialize Experience Countup
 			$(".counter").countUp();

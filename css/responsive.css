@@ -152,6 +152,17 @@
 	.portfolio .portfolio-buttons {
 		margin: 0 0 35px;
 	}
+	.review .review-us {
+		text-align: center;
+		gap: 20px;
+	}
+	.review .review-us .rating-stars {
+		justify-content: center;
+	}
+	.review .clients-reviews p {
+		height: 150px;
+		padding-right: 5px;
+	}
 }
 
 @media (max-width: 375px) {
@@ -169,5 +180,13 @@
 	}
 	.portfolio .portfolio-content img {
 		height: 220px;
+	}
+	.review .clients-reviews .client-review-content {
+		padding: 25px;
+	}
+	.review .clients-reviews .review-btn {
+		font-size: 0.9rem;
+		padding: 8px;
+		top: 44%;
 	}
 }
